@@ -55,7 +55,6 @@
         <liquibase-hibernate5.version>4.15.0</liquibase-hibernate5.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <jaxb-runtime.version>4.0.0</jaxb-runtime.version>
-        <archunit-junit5.version>0.22.0</archunit-junit5.version>
         <mapstruct.version>1.5.2.Final</mapstruct.version>
         <!-- Plugin versions -->
         <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
@@ -276,20 +275,6 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.tngtech.archunit</groupId>
-            <artifactId>archunit-junit5-api</artifactId>
-            <version>${archunit-junit5.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- Adding the engine dependency to the surefire-plugin unfortunately does not work in the current version. -->
-        <!-- https://www.archunit.org/userguide/html/000_Index.html#_junit_5 -->
-        <dependency>
-            <groupId>com.tngtech.archunit</groupId>
-            <artifactId>archunit-junit5-engine</artifactId>
-            <version>${archunit-junit5.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
