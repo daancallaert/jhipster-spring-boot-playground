@@ -25,7 +25,7 @@
     <properties>
         <!-- Build properties -->
         <maven.version>3.2.5</maven.version>
-        <java.version>18</java.version>
+        <java.version>19</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
@@ -73,10 +73,10 @@
         <checkstyle.version>10.3.2</checkstyle.version>
         <nohttp-checkstyle.version>0.0.10</nohttp-checkstyle.version>
         <git-commit-id-plugin.version>5.0.0</git-commit-id-plugin.version>
-        <modernizer-maven-plugin.version>2.4.0</modernizer-maven-plugin.version>
+        <modernizer-maven-plugin.version>2.5.0</modernizer-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <jib-maven-plugin.version>3.3.1</jib-maven-plugin.version>
-        <jib-maven-plugin.image>eclipse-temurin:11-jre-focal</jib-maven-plugin.image>
+        <jib-maven-plugin.image>eclipse-temurin:19-jre-focal</jib-maven-plugin.image>
         <jib-maven-plugin.architecture>amd64</jib-maven-plugin.architecture>
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
         <properties-maven-plugin.version>1.1.0</properties-maven-plugin.version>
@@ -702,8 +702,8 @@
                                 <version>[${maven.version},)</version>
                             </requireMavenVersion>
                             <requireJavaVersion>
-                                <message>You are running an incompatible version of Java. JHipster supports JDK 11 to 18.</message>
-                                <version>[11,12),[12,13),[13,14),[14,15),[15,16),[16,17),[17,18),[18,19)</version>
+                                <message>You are running an incompatible version of Java. JHipster supports JDK 11 to 19.</message>
+                                <version>[11,12),[12,13),[13,14),[14,15),[15,16),[16,17),[17,18),[18,19),[19,20),</version>
                             </requireJavaVersion>
                         </rules>
                     </configuration>
